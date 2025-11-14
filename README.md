@@ -1,16 +1,16 @@
-# Timely
+# Timelee
 
 > A collaborative planner that turns your handwritten schedules into smart, digital events.
 
-**Timely** is a cross-platform app that bridges the gap between the freedom of a paper journal and the power of a digital calendar. It's designed for those who think best with a pen in hand and need a simpler, more intuitive way to organize life, track wellness, and stay focused.
+**Timelee** is a cross-platform app that bridges the gap between the freedom of a paper journal and the power of a digital calendar. It's designed for those who think best with a pen in hand and need a simpler, more intuitive way to organize life, track wellness, and stay focused.
 
 ## What is this?
 
 Digital planners can be finicky on tablet devices, on the other hand traditional paper bullet journals are flexible and personal. However the concept is "dumb." It can't send notifications, sync across your devices, and be shared easily.
 
-Timely gives the best of both worlds. It provides a digital canvas where you can **draw your own schedule**, **write your to-dos**, and **log your habits by hand**. Timely intelligently parses your handwriting and transforms it into real digital events.
+Timelee gives the best of both worlds. It provides a digital canvas where you can **draw your own schedule**, **write your to-dos**, and **log your habits by hand**. Timelee intelligently parses your handwriting and transforms it into real digital events.
 
-Timely can:
+Timelee can:
 - Sync across all devices
 - Send notifications for events your _drew_ up
 - Lets your collaborate and share schedules with friends
@@ -18,9 +18,9 @@ Timely can:
 It provides a simpler, zen, and more mindful approach to productivity, built to help your organize your life in a way you probably wouldn't imagined.
 
 ## Key Features
-- **Analog-to-digital Scheduling**: The core of Timely. Draw a block on your daily, weekly, or monthly view, write "ECON101 @ 1:00-2:15," and Timely automatically creates that event in your calendar.
+- **Analog-to-digital Scheduling**: The core of Timelee. Draw a block on your daily, weekly, or monthly view, write "ECON101 @ 1:00-2:15," and Timelee automatically creates that event in your calendar.
 - **Basic Calendar Functions**: Create recurring events (like classes or appointments), set to-dos, and get reminders, all synced across all platforms.
-- **Life Tracking**: Timely includes integrated modules for:
+- **Life Tracking**: Timelee includes integrated modules for:
   - **Goal tracking**: Log and visualize progress on your habits.
   - **Body tracking**: Keep track of your workouts, food/calorie intake, and body weight.
   - **Time tracking**: Monitor sleep duration and screen time to look back on habits.
