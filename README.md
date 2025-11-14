@@ -1,8 +1,8 @@
-# Timely (iOS & Android App)
+# Timely
 
 > A collaborative planner that turns your handwritten schedules into smart, digital events.
 
-**Timely** is a cross-platform app (iOS, Android, and Web) that bridges the gap between the freedom of a paper journal and the power of a digital calendar. It's designed for those who think best with a pen in hand and need a simpler, more intuitive way to organize life, track wellness, and stay focused.
+**Timely** is a cross-platform app that bridges the gap between the freedom of a paper journal and the power of a digital calendar. It's designed for those who think best with a pen in hand and need a simpler, more intuitive way to organize life, track wellness, and stay focused.
 
 ## What is this?
 
@@ -25,57 +25,70 @@ It provides a simpler, zen, and more mindful approach to productivity, built to 
   - **Body tracking**: Keep track of your workouts, food/calorie intake, and body weight.
   - **Time tracking**: Monitor sleep duration and screen time to look back on habits.
 - **Journaling**: A dedicated space for personal thoughts and reflections, tied directly to your days and mood.
-- **Cross-platform**: Native support for iOS (Apple Pencil) and Android (stylus-enabled devices like the Boox)
+- **Cross-platform**: Native support for Android (stylus-enabled devices like the Boox or Kindle)
 
 ## Made with
 
-![Static Badge](https://img.shields.io/badge/React-19.2.0-blue?style=flat&logo=react) ![Static Badge](https://img.shields.io/badge/React%20Native-0.82.1-blue?style=flat&logo=react) ![Static Badge](https://img.shields.io/badge/Firebase-14.19.0-orange?style=flat&logo=firebase) ![Static Badge](https://img.shields.io/badge/MongoDB-8.2-green?style=flat&logo=mongodb)
+![Swift](https://img.shields.io/badge/swift-F54A2A.svg?style=for-the-badge&logo=swift&logoColor=white) ![Kotlin](https://img.shields.io/badge/kotlin-%237F52FF.svg?style=for-the-badge&logo=kotlin&logoColor=white) ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) ![Firebase](https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase)
 
 ## Roadmap
 
 <details>
-<summary><strong>🗺️ Click to view the Project Roadmap</strong></summary>
+<summary><strong>🗺️ Click to view the Project Roadmap (Android/Web First)</strong></summary>
 <br>
-We are currently in active development. This roadmap outlines our planned features, and we welcome all contributions.
+Our development strategy prioritizes Android (Kotlin) and Web (React) to reach a v1.0 launch, with iOS (Swift) development planned to begin afterward.
 
-### Phase 1: Proof of Concept (Local-Only)
-- [ ] Basic React Native project setup.
-- [ ] Implement a drawing canvas view.
-- [ ] Integrate a handwriting recognition service (e.g., ML Kit, Vision).
-- [ ] Create a simple parser to identify events and times from text.
-- [ ] Save drawings and parsed events to local device storage.
-- [ ] Display parsed events on a basic calendar view.
+### Phase 1: Core Backend & Android POC
+**Goal:** Prove the core "analog-to-digital" concept works on Android.
+- [ ] **[Backend]** Setup Firebase: Authentication, Firestore, and Storage.
+- [ ] **[Backend]** Design V1 database schema for users, events, and drawings.
+- [ ] **[Android - Kotlin]** Project setup (Jetpack Compose) and native drawing canvas.
+- [ ] **[Android - Kotlin]** Integrate Google's ML Kit for handwriting recognition (POC).
+- [ ] **[Android - Kotlin]** Basic local storage for saving drawings and parsed events.
 
-### Phase 2: Core MVP (Sync & Web)
-- [ ] Implement Firebase backend (Authentication, Firestore, Storage).
-- [ ] Add user sign-up, login, and Google Sign-In.
-- [ ] Design and implement Firestore database schema.
-- [ ] Sync all data (events, drawings) between devices using Firebase.
-- [ ] Build the initial React web application with auth and a read-only calendar view.
-- [ ] Add digital event creation/editing (in addition to drawing).
-- [ ] Implement a basic, synced to-do list.
+### Phase 2: Synced MVP (Android + Web)
+**Goal:** Get Android and Web authenticated and syncing data with Firebase.
+- [ ] **[Backend]** Implement user authentication (Email/Google) and secure Firestore rules.
+- [ ] **[Android - Kotlin]** Integrate Firebase SDK (Auth, Firestore) and sync data.
+- [ ] **[Android - Kotlin]** Build basic calendar and event views.
+- [ ] **[Android - Kotlin]** Add digital (non-drawing) event creation/editing.
+- [ ] **[Web - React]** Build the initial React app, integrate Firebase auth, and build a read-only calendar view that syncs with Firestore.
 
-### Phase 3: Beta (Wellness & Utility Features)
-- [ ] Add support for recurring calendar events.
-- [ ] Implement push notifications for event reminders (via Firebase Cloud Messaging).
-- [ ] Build the journaling module, linking entries to specific days.
-- [ ] Build the V1 habit tracking module.
-- [ ] Create "Schedule Templates" to allow users to save and reuse their hand-drawn layouts.
-- [ ] Set up TestFlight and Google Play Console for beta testing.
+### Phase 3: Beta (Android + Web Feature Parity)
+**Goal:** Build out the full wellness and utility feature set on Android and Web.
+- [ ] **[Backend]** Setup Firebase Cloud Messaging (FCM) for notifications.
+- [ ] **[Android - Kotlin]** Integrate FCM for push notifications.
+- [ ] **[Web - React]** Implement web push notifications.
+- [ ] **[Android/Web]** Implement recurring events logic.
+- [ ] **[Android/Web]** Build the Journaling module (UI and backend).
+- [ ] **[Android/Web]** Build the V1 Habit Tracking module (UI and backend).
+- [ ] **[Android - Kotlin]** Implement "Schedule Templates" to save/reuse hand-drawn layouts.
+- [ ] **[Ops]** Setup Google Play Console for closed beta.
 
-### Phase 4: v1.0 Public Launch (Collaboration)
-- [ ] Implement V1 collaboration: allow users to follow friends and view their public schedules (read-only).
-- [ ] Complete the wellness modules: Body Tracking (calories, food, weight) and Time Tracking (sleep).
-- [ ] Add basic charts and graphs to visualize wellness data.
-- [ ] Conduct a full UI/UX design polish for a clean, professional feel.
-- [ ] Launch on the Apple App Store and Google Play Store.
+### Phase 4: v1.0 Launch (Android + Web)
+**Goal:** Polish and launch the Android and Web apps with V1 collaboration.
+- [ ] **[Backend]** Implement logic for "following" and public/private schedules.
+- [ ] **[Android/Web]** Build UI for V1 collaboration (view friends' public schedules).
+- [ ] **[Android/Web]** Complete wellness modules: Body Tracking and Time Tracking.
+- [ ] **[Android/Web]** Add basic charts/graphs for wellness data.
+- [ ] **[Android/Web]** Conduct full UI/UX design polish and create onboarding flows.
+- [ ] **[Ops]** Launch on the Google Play Store and a public web domain.
 
-### Future (Post-v1.0)
-- [ ] Real-time collaborative editing (shared journals, schedules).
-- [ ] AI-powered insights on wellness and productivity.
-- [ ] Integrations with Google Calendar, Apple Health, etc.
-- [ ] Advanced handwriting AI (natural language understanding).
-- [ ] A public API for third-party developers.
+### Phase 5: iOS Development & Future Features
+**Goal:** Begin iOS development to achieve parity and introduce new global features.
+- [ ] **[iOS - Swift]** Begin iOS Development:
+    - [ ] Project setup (SwiftUI) and native drawing canvas (`PencilKit`).
+    - [ ] Integrate Apple's Vision framework for handwriting recognition (POC).
+    - [ ] Integrate Firebase SDK (Auth, Firestore) and sync all data.
+    - [ ] Build all core app views (Calendar, Journal, Habits, etc.) to match Android/Web.
+    - [ ] Implement notifications, templates, and collaboration features.
+    - [ ] UI/UX polish and launch on the Apple App Store.
+- [ ] **[All Platforms] Future Vision:**
+    - [ ] Real-time collaborative editing (shared journals/schedules).
+    - [ ] AI-powered wellness/productivity insights.
+    - [ ] Integrations: Google Calendar, Apple Health, Google Fit.
+    - [ ] Advanced handwriting AI (natural language understanding).
+    - [ ] A public API for third-party developers.
 
 </details>
 
